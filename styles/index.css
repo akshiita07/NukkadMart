@@ -6,6 +6,8 @@ body {
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  font-size: 18px;
 }
 #mainNav {
   position: fixed;
@@ -28,14 +30,14 @@ a {
   margin-bottom: auto;
   height: 60px;
   width: 92px;
-  padding: 0 28px 0 28px;
+  padding-right:60px;
 }
 #logo > img {
-  height: 65px;
-  width: 95px;
+  height: 73px;
+  width: 143px;
 }
 #location {
-  width: 340px;
+  width: 290px;
   display: flex;
   gap: 15px;
   box-sizing: border-box;
@@ -100,9 +102,15 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-size: 18px;
 }
 #Andownload{
   margin-top: 60px;
+}
+#inner_byOm{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
 }
 .carticon {
   transform: scale(0.8);

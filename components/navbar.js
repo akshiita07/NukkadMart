@@ -2,7 +2,7 @@ function navbar() {
   return ` <div id="mainNav">
     <div id="logo">
       <img 
-        src="./images/logo.png"
+        src="./images/navLogo.png"
         alt=""
         height="100%"
           width="100%"
