@@ -1,19 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-
+  width: 100vw;
 }
+
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 18px;
 }
+
 #mainNav {
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: #ffe141; /*#f5d000*/
+  background-color: #ffe141;
+  /*#f5d000*/
   display: flex;
   font-family: Okra, Helvetica;
   font-size: 14px;
@@ -25,37 +28,44 @@ a {
   right: 0;
   z-index: 34;
 }
+
 #logo {
   margin-top: auto;
   margin-bottom: auto;
   height: 60px;
   width: 92px;
-  padding-right:60px;
+  padding-right: 60px;
 }
-#logo > img {
+
+#logo>img {
   height: 73px;
   width: 143px;
 }
+
 #location {
   width: 290px;
   display: flex;
   gap: 15px;
   box-sizing: border-box;
 }
-#location > img {
+
+#location>img {
   margin-top: 4%;
   height: 32px;
   width: 32px;
 }
+
 #locName {
   margin-top: 4%;
   text-align: center;
 }
-#locName > h2,
-#locName > p {
+
+#locName>h2,
+#locName>p {
   margin: 0;
   padding: 0;
 }
+
 #searchbox {
   margin-top: auto;
   margin-bottom: auto;
@@ -65,31 +75,37 @@ a {
   border: 1px solid #d8d8d8;
   border-radius: 8px;
 }
-#searchbox > input {
+
+#searchbox>input {
   height: 100%;
   width: 100%;
   border: 0;
   border-radius: 0 8px 8px 0;
 }
-#searchbox > button {
+
+#searchbox>button {
   height: 44px;
   width: 50px;
   border: 0;
   border-radius: 8px 0 0 8px;
 }
+
 #cat1 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 #cat2 {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 #cat3 {
   position: relative;
   display: none;
   top: 23px;
 }
+
 #mycart {
   margin-top: auto;
   margin-bottom: auto;
@@ -104,17 +120,27 @@ a {
   cursor: pointer;
   font-size: 18px;
 }
-#Andownload{
+
+#Andownload {
   margin-top: 60px;
+  margin-left: 10%;
 }
-#inner_byOm{
+
+.allItemsContainer{
+  margin: auto;
+  width: 85%;
+}
+
+#inner_byOm {
   margin-top: 20px;
   margin-bottom: 20px;
-  
+
 }
+
 .carticon {
   transform: scale(0.8);
 }
+
 #sugBox {
   width: 670px;
   height: 330px;
@@ -128,7 +154,8 @@ a {
   border-radius: 10px;
   position: fixed;
 }
-#sugBox > div {
+
+#sugBox>div {
   height: 50px;
   width: 97%;
   margin-top: 10px;
@@ -140,10 +167,12 @@ a {
   padding-left: 10px;
   border-radius: 10px;
 }
-#sugBox > div > img {
+
+#sugBox>div>img {
   width: 50px;
   height: 40px;
 }
+
 #sideCart {
   height: 704px;
   /* float: right; */
@@ -163,6 +192,7 @@ a {
 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 #openClose {
   display: flex;
   align-items: center;
@@ -172,6 +202,7 @@ a {
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 #closeCart {
   width: 28px;
   height: 28px;
@@ -180,6 +211,7 @@ a {
   background: none;
   border: none;
 }
+
 #cartEmptyImg {
   display: none;
   width: 100%;
@@ -188,11 +220,13 @@ a {
   text-align: center;
   background-color: white;
 }
-#cartEmptyImg > img {
+
+#cartEmptyImg>img {
   width: 144px;
   height: 144px;
 }
-#cartEmptyImg > button {
+
+#cartEmptyImg>button {
   height: 32px;
   width: 174px;
   border: 1px solid #000000;
@@ -203,6 +237,7 @@ a {
   color: white;
   box-sizing: border-box;
 }
+
 #subcart {
   display: none;
   position: absolute;
@@ -212,18 +247,22 @@ a {
   top: 90px;
   padding: 8px;
 }
-#subcart > img {
+
+#subcart>img {
   height: 80px;
   width: 95%;
 }
-#subcart > h2,
-#subcart > p {
+
+#subcart>h2,
+#subcart>p {
   margin: 0;
   padding: 0;
 }
-#subcart > p {
+
+#subcart>p {
   margin-bottom: 15px;
 }
+
 #zz {
   position: absolute;
 
@@ -232,12 +271,15 @@ a {
   width: 100%;
   overflow: scroll;
 }
-#zz > div {
+
+#zz>div {
   border-top: 1px solid grey;
 }
+
 #zz::-webkit-scrollbar {
   display: none;
 }
+
 #bill {
   position: absolute;
   top: 620px;
@@ -245,10 +287,12 @@ a {
 
   padding: 10px;
 }
-#bill > h2 {
+
+#bill>h2 {
   margin: 0;
 }
-#bill > button {
+
+#bill>button {
   width: 90%;
   height: 30px;
   border: none;
@@ -256,6 +300,7 @@ a {
   color: white;
   margin-top: -10px;
 }
+
 #login {
   position: absolute;
   text-align: center;
@@ -268,17 +313,20 @@ a {
   display: none;
   cursor: pointer;
 }
+
 #phoneHead {
   height: 80px;
   border: 1px solid white;
   background-color: white;
 }
+
 #dialPad {
   margin: auto;
   width: 280px;
   height: 200px;
 }
-#dialPad > button {
+
+#dialPad>button {
   background-color: #0c831f;
   border: none;
   border-radius: 8px;
@@ -286,10 +334,12 @@ a {
   width: 260px;
   height: 40px;
 }
-#dialPad > input {
+
+#dialPad>input {
   width: 250px;
   height: 35px;
 }
+
 #myDropdown {
   display: none;
   position: absolute;
@@ -301,18 +351,22 @@ a {
   outline: 1px dashed gray;
   background-color: lightgray;
 }
-#myDropdown > h2,
-#myDropdown > p {
+
+#myDropdown>h2,
+#myDropdown>p {
   margin: 0;
   padding: 0;
 }
-#myDropdown > p {
+
+#myDropdown>p {
   margin-bottom: 15px;
 }
-#myDropdown > li {
+
+#myDropdown>li {
   line-height: 30px;
   list-style: none;
 }
+
 #qr {
   height: 75px;
   background: #f6fbff;
@@ -320,7 +374,8 @@ a {
   gap: 15px;
   padding: 10px;
 }
-#qr > img {
+
+#qr>img {
   width: 70px;
   height: 70px;
 }
@@ -331,6 +386,7 @@ a {
   grid-template-columns: repeat(8, 160px);
   justify-content: center;
 }
+
 #bankgrid img {
   width: 160px;
   height: 205px;
@@ -346,13 +402,16 @@ a {
   margin-left: 40px;
   /* align-items: center; */
 }
-#bankCard > div {
+
+#bankCard>div {
   text-align: center;
 }
-#bankCard > div > img {
+
+#bankCard>div>img {
   width: 1000px;
   height: 170px;
 }
+
 /* footer {
   background-color: #333;
   color: #fff;
@@ -407,6 +466,13 @@ a {
   background-color: #222;
   color: #ddd;
   padding: 20px 0;
+  width: 100vw;
+  margin: 0px 0px;
+}
+
+#container_byOm {
+  width: 100vw;
+
 }
 
 .footer-content {
@@ -448,22 +514,26 @@ a {
 /* Logo and App Links */
 .logo {
   max-width: 120px;
-  margin-bottom: 10px; /* Space between logo and app links */
+  margin-bottom: 10px;
+  /* Space between logo and app links */
 }
 
 .app-links {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px; /* Space between app links and social icons */
+  margin-bottom: 10px;
+  /* Space between app links and social icons */
 }
 
 .google-play-logo {
-  height: 30px; /* Resize height as needed */
+  height: 30px;
+  /* Resize height as needed */
   width: auto;
 }
 
 .app-store-logo {
-  height: 30px; /* Ensure both are similar in height */
+  height: 30px;
+  /* Ensure both are similar in height */
   width: auto;
 }
 
@@ -537,6 +607,7 @@ a {
 .show-more:hover {
   color: #fff;
 }
+
 /* Copyright Section Styling */
 .footer-copyright {
   background-color: #222;

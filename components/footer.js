@@ -1,218 +1,112 @@
 function footer(){
     return ` 
-    <div id="center">
-    <div id="footer_head">
-    <div class="head">
-        <h2>We deliver everything in 10 minutes</h2>
-        <p>blinkit (formerly Grofers) is India's fastest online shopping platform. Get fresh groceries and much more delivered online instantly.</p>
-    </div>
-    <div class="head">
-        <h2> Single app for all your daily needs</h2>
-        <p>Order thousands of products at just a tap: milk, eggs, bread, cooking oil, ghee, atta, rice, fresh fruits and vegetables, spices, fresh meat, seafood, frozen veg and non-veg food, chocolates, chips, biscuits, maggi, cold
-            drinks, shampoos, soaps, body wash, pet food, diapers, electronics, 
-            sanitizers, masks, sanitary napkins, health products, hygiene products, organic products and gourmet products, and much more from your neighbourhood stores.
-         </p>
-    </div>
-    <div class="head">
-        <h2>Available in following cities</h2>
-        <p>The delivery service is operational in Agra, Ahmedabad, Aligarh, Allahabad, Bengaluru, Bhiwadi, Bijnor, Chandigarh, Chennai, Delhi, Durgapur, Faridabad, Gauriganj, Gonda, Gurugram, Guwahati, Hisar, Hyderabad, Jaipur,<br> 
-            Jamshedpur, Kanpur, Kolkata, Kota, Lucknow, Mathura, Meerut, Mohali, Moradabad, Mumbai, Noida, Panchkula, Panipat, Pune, Raebareli, Rohtak, Sonipat, Vadodara, Zirakpur
-        </p>
-    </div>
-</div>
-<div id="four_col">
-    <div class="col">
-       <div class="img">
-        <img src="https://blinkit.com/images/home/express-delivery-icon-93fce76.png" alt="">
-       </div>
-        <div class="info">
-            <h2>10 minute grocery now</h2>
-            <p>Get your order delivered to your doorstep at the earliest from dark stores near you.</p>
-        </div>
-    </div>
-    <div class="col">
-        <div class="img">
-            <img src="https://blinkit.com/images/home/footer-best-price-icon-90b5bd7.png" alt="">
-        </div>
-        <div class="info">
-            <h2>Best Prices & Offers
-            </h2>
-            <p>Cheaper prices than your local supermarket, great cashback offers to top it off.
-            </p>
-        </div>
-    </div>
-    <div class="col">
-       <div class="img">
-        <img src="https://blinkit.com/images/home/footer-genuine-products-icon-d2756ce.png" alt="">
-       </div>
-        <div class="info">
-            <h2>Wide Assortmen</h2>
-            <p>Choose from 5000+ products across food, personal care, household & other categories.
-            </p>
-        </div>
-    </div>
-    <div class="col">
-       <div class="img"> 
-           <img src="https://blinkit.com/images/home/footer-easy-returns-icon-02b777e.png" alt="">
-        </div>
-        <div class="info">
-            <h2>Easy Returns</h2>
-            <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours.
-            </p>
-        </div>
-    </div>
-</div>
-<div id="middle">
-<div id="left">
-    <div  class="title">
-        <p>Categories</p>
-    </div>
-    <div id="left_div_list">
-        <div id="left_list">
-            <ul class="list">
-                <a href=""><li>grocery & staples</li></a>
-                <a href=""><li>household items</li></a>
-                <a href=""><li>bakery & biscuits</li></a>
-                <a href=""><li>cold drink & juices</li></a>
-                <a href=""><li>sweet tooth</li></a>
-                <a href=""><li>pharma & baby care</li></a>
-                <a href=""><li>egg ,meat & fish</li></a>
-                <a href=""><li>battery, buib & accesories</li></a>
-                <a href=""><li>Home furnishing</li></a>
-                <a href=""><li>Stationery needs</li></a>
-                <a href=""><li>best value</li></a>
-                <a href=""><li>ocassion,festival</li></a>
+    <footer id="footer_display">
+      <footer id="footer_display">
+        <div class="footer-content">
+          <!-- Company Links Section -->
+          <div class="footer-section company-links">
+            <h3>NukkadMart</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Become A bigbasket Rider</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Careers</a></li>
             </ul>
-        </div>
-        <div id="right_list">
-            <ul class="list">
-                <a href=""><li>vegetable & foods</li></a>
-                <a href=""><li>noodle ,sauses & accesories</li></a>
-                <a href=""><li>personal care</li></a>
-                <a href=""><li>tea,coffee & health drinks</li></a>
-                <a href=""><li>munchies</li></a>
-                <a href=""><li>daily bread & eggs</li></a>
-                <a href=""><li>frozen food</li></a>
-                <a href=""><li>cleaning & bathroom essentials</li></a>
-                <a href=""><li>kithen & dining needs</li></a>
-                <a href=""><li>pet care</li></a>
-                <a href=""><li>lowest price</li></a>
+          </div>
+
+          <!-- Help Section -->
+          <div class="footer-section help-links">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Wallet FAQs</a></li>
+              <li><a href="#">Wallet T&Cs</a></li>
             </ul>
+          </div>
+
+          <!-- Branding and Social Media Section -->
+          <div class="footer-section branding">
+            <div class="logo-and-apps">
+              <img src="images/logo.png" alt="Bigbasket Logo" class="logo">
+              <div class="app-links">
+                <a href="#"><img src="images/google_play.webp" alt="Google Play" class="google-play-logo"></a>
+                <a href="#"><img src="images/app_store.png" alt="App Store" class="app-store-logo"></a>
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">
+                <img src="images/facebook-logo.webp" alt="Facebook" width="24" height="24">
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img src="images/instagram-logo.webp" alt="Instagram" width="24" height="24">
+              </a>
+              <a href="#" aria-label="Twitter">
+                <img src="images/twitter.webp" alt="Twitter" width="24" height="24">
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-<div id="right">
-    <div class="first">
-        <div class="title">
-            <p>company</p>
+      </footer>
+      <!-- New Popular Section Below the Original Footer -->
+      <section class="footer-popular-section">
+        <div class="footer-popular-content">
+
+          <!-- Popular Categories Column 1 -->
+          <div class="footer-section popular-categories">
+            <h3>Popular Categories</h3>
+            <ul>
+              <li><a href="#">Sunflower Oils</a></li>
+              <li><a href="#">Milk</a></li>
+              <li><a href="#">Organic F&V</a></li>
+              <li><a href="#">Floor Cleaners</a></li>
+              <li><a href="#">Frozen Veg Food</a></li>
+            </ul>
+          </div>
+
+          <!-- Popular Categories Column 2 -->
+          <div class="footer-section popular-categories">
+            <h3>&nbsp;</h3> <!-- Empty header for alignment -->
+            <ul>
+              <li><a href="#">Wheat Atta</a></li>
+              <li><a href="#">Health Drinks</a></li>
+              <li><a href="#">Namkeen</a></li>
+              <li><a href="#">Other Juices</a></li>
+              <li><a href="#">Diapers & Wipes</a></li>
+            </ul>
+          </div>
+
+          <!-- Popular Brands Column 1 -->
+          <div class="footer-section popular-brands">
+            <h3>Popular Brands</h3>
+            <ul>
+              <li><a href="#">Amul</a></li>
+              <li><a href="#">Red Bull</a></li>
+              <li><a href="#">Yummiez</a></li>
+              <li><a href="#">Britannia</a></li>
+              <li><a href="#">Haldiram's</a></li>
+            </ul>
+          </div>
+
+          <!-- Popular Brands Column 2 -->
+          <div class="footer-section popular-brands">
+            <h3>&nbsp;</h3> <!-- Empty header for alignment -->
+            <ul>
+              <li><a href="#">Nescafe</a></li>
+              <li><a href="#">elite cake</a></li>
+              <li><a href="#">Yera</a></li>
+              <li><a href="#">Wow! Momo</a></li>
+              <li><a href="#">Ferrero</a></li>
+            </ul>
+            <a href="#" class="show-more">Show more +</a>
+          </div>
+
         </div>
-        <div class="right_list">
-          <ul>
-              <a href=""><li>About</li></a>
-              <a href=""><li>career</li></a>
-              <a href=""><li>blog</li></a>
-              <a href=""><li>press</li></a>
-              <a href=""><li>lead</li></a>
-              <a href=""><li>value</li></a>
-          </ul>
-        </div>
-    </div>
-    <div class="second">
-        <div class="title">
-            <p>For consumers</p>
-        </div>
-        <div class="right_list">
-          <ul>
-              <a href=""><li>Privacy</li></a>
-              <a href=""><li>Terms</li></a>
-              <a href=""><li>Faq</li></a>
-              <a href=""><li>secuirity</li></a>
-              <a href=""><li>mobile</li></a>
-              <a href=""><li>contract</li></a>
-          </ul>
-        </div>
-    </div>
-    <div class="third">
-        <div class="title">
-            <p>For Partner</p>
-        </div>
-        <div class="right_list">
-          <ul>
-              <a href=""><li>Partner</li></a>
-              <a href=""><li>Express</li></a>
-              <a href=""><li>Local</li></a>
-              <a href=""><li>spotlight</li></a>
-              <a href=""><li>warehouse</li></a>
-              <a href=""><li>deliver</li></a>
-          </ul>
-        </div>
-    </div>
-</div>
-</div>
-<div id="icon">
-<div id="left_icon">
-  <span>Follow us</span>
-  <ul>
-      <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a href="" class="blinkit_care">
-          <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-          <span>@blinkitcares</span>
-      </a>
-      <a href="" class="blinkit_care">
-        <span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-        <span>@blinkiteng</span>
-    </a>
-  </ul>
-</div>
-<div id="right_icon">
-    <span>Download app</span>
-    <div id="right_img">
-        <img src="https://blinkit.com/images/home/google-play_1x-0c7086a.png" alt="">
-        <img src="https://blinkit.com/images/home/app-store_1x-cbeb7ea.png" alt="">
-    </div>
-</div>
-</div>
-<div id="brands">
-<h3>Brands available on blinkit (formerly grofers)</h3>
-<p>grofers Happy Day  grofers Happy Home  grofers Mother's Choice  g Fresh O'range Savemore24 MantraAashirvaad Act II
-    Amul Axe Bambino Best Value Bingo Bisleri Boost Bournvita Britannia Brooke Bon Bru Cadbury Cheetos Cinthol Closeup
-    Coca-Cola Colgate Dabur Danone Del Monte Dettol Dhara Dove Durex English Oven Everest Fiama Di Wills Garnier Gatorade Gillette
-    Glucon-D Grocery Gowardhan Hajmola Haldiram's Head & Shoulders Heinz Himalaya Horlicks India GateKellogg's Kinley Kissan
-    Knorr L'Oreal Lay's Lijjat Limca Lipton Maggi Madhur McCain MDH Minute Maid Mirinda Mother Dairy Mountain Dew MTR
-    Nescafe Nestle Nivea Nutella Oral-B Oreo Palmolive Pantene Paper Boat Parachute
-    Parle Patanjali Pears Pepsi Pepsodent Pillsbury PrincewareRajdhani Real Red Bull Safal Saffola Shakti Bhog Smith & Jones Sprite StayfreeSundrop
-    Sunfeast
-    Sunsilk
-</p>
-</div>
-<div id="payment_partner">
-<h3>Payment partners</h3>
-<div id="payment_gateway">
-    <img src="https://blinkit.com/images/payment/mobikwik-c96e507.png" alt="">
-    <img src="https://blinkit.com/images/payment/paytm-b393728.png" alt="">
-    <img src="https://blinkit.com/images/payment/visa-95f2100.png" alt="">
-    <img src="https://blinkit.com/images/payment/mastercard-01e540b.png" alt="">
-    <img src="https://blinkit.com/images/payment/maestro-e164fe0.png" alt="">
-    <img src="https://blinkit.com/images/payment/rupay-39478ad.png" alt="">
-    <img src="https://blinkit.com/images/payment/amex-fdda4b1.png" alt="">
-    <img src="https://blinkit.com/images/payment/sodexo-82f2019.png" alt="">
-    <img src="https://blinkit.com/images/payment/bhim-upi-02aef45.png" alt="">
-    <span>Net Banking</span>
-    <span>Cash on delivery</span>
-    <span>Grofers cash</span>
-</div>
-</div>
-<div id="service">
-"Blinkit (formerly Grofers)" is owned & managed by "Grofers India Private Limited” and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate
- services business operated by “Redstone Consultancy Services Private Limited”.
-</div>
-<div id="policy">
-By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their 
-respective owners. 2016-2021 © Grofers India Pvt Ltd. All rights reserved.
-</div>
-</div> `
+      </section>
+      <div class="footer-copyright">
+        <p>&copy; 2024 NukkadMart. All rights reserved.</p>
+      </div>
+    </footer> `
 }
 export default footer;

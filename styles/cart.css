@@ -110,9 +110,9 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #sliderDiv_byOm{
-            width:100%;
+            width:85%;
             height: 500px;
-            /* margin: auto; */
+            margin: auto;
         }
        #slider-image_byOm{
             width:100%;
