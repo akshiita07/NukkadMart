@@ -2,8 +2,10 @@ function navbar() {
   return ` <div id="mainNav">
     <div id="logo">
       <img 
-        src="https://blinkit.com/images/header/blinkit-logo-header-05a0b5f.png"
+        src="./images/logo.png"
         alt=""
+        height="100%"
+          width="100%"
       />
     </div>
     <div id="location">
@@ -20,13 +22,13 @@ function navbar() {
       <input type="text" id="search" />
     </div>
     <div id="cat1">
-      <a href="../category.html">categories</a>
+      <a href="../category.html">Categories</a>
     </div>
     <div id="cat2">
-      <a>login</a>
+      <a>Login</a>
     </div>
     <div id="cat3">
-      <a>profile</a>
+      <a>Profile</a>
     </div>
 
     <div id="mycart">
