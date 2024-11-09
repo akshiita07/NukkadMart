@@ -353,3 +353,200 @@ a {
   width: 1000px;
   height: 170px;
 }
+/* footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+} */
+/* Footer Styling */
+/* Footer Styling */
+#footer_display {
+  background-color: #222;
+  color: #ddd;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Logo and App Links */
+.logo {
+  max-width: 120px;
+  margin-bottom: 10px; /* Space between logo and app links */
+}
+
+.app-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px; /* Space between app links and social icons */
+}
+
+.google-play-logo {
+  height: 30px; /* Resize height as needed */
+  width: auto;
+}
+
+.app-store-logo {
+  height: 30px; /* Ensure both are similar in height */
+  width: auto;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+  opacity: 0.7;
+}
+
+.footer-popular-section {
+  background-color: #222;
+  padding: 20px 0;
+  color: #ddd;
+}
+
+.footer-popular-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-popular-section .footer-section {
+  flex: 1;
+  min-width: 150px;
+  margin: 0 10px;
+}
+
+.footer-popular-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.footer-popular-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-popular-section ul li {
+  margin: 5px 0;
+}
+
+.footer-popular-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-popular-section ul li a:hover {
+  color: #fff;
+}
+
+.show-more {
+  display: block;
+  margin-top: 10px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.show-more:hover {
+  color: #fff;
+}
+/* Copyright Section Styling */
+.footer-copyright {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
