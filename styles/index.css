@@ -129,6 +129,7 @@ a {
 .allItemsContainer{
   margin: auto;
   width: 85%;
+  margin-bottom: 40px;
 }
 
 #inner_byOm {
