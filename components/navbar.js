@@ -67,7 +67,7 @@ function navbar() {
       <h2>Bill Details</h2>
       <p id="totalBill"></p>
       <p>Convenience & Safety fee: ₹5</p>
-      <button id="billed"> <a style="color:white;font-weight:bold" href="../address.html"> Proceed </a></button>
+      <button id="billed"> <a style="color:white;font-weight:bold" href="address.html"> Proceed </a></button>
     </div>
     <!-- cart items appending div -->
   </div>
