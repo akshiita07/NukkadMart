@@ -73,12 +73,6 @@ function navbar() {
       <button>start shopping</button>
     </div>
     <div id="subcart">
-      <h2>delivery in 7 minutes</h2>
-      <p>from Super Store - Bengaluru Kormangala ES22</p>
-      <img
-        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=88/layout-engine/2021-12/blinkit-cart-banner.png"
-        alt=""
-      />
     </div>
     <div id="zz"></div>
     <div id="bill">
