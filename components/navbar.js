@@ -59,7 +59,7 @@ function navbar() {
       />
       <h3>You don't have any items in your cart</h3>
       <p>Your favourite items are just a click away</p>
-      <button>Start shopping</button>
+      <button id="mycart" class="startShoppingBtn">Start Shopping</button>
     </div>
     <div id="subcart"></div>
     <div id="zz"></div>

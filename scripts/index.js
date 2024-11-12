@@ -116,14 +116,6 @@ function append(data) {
 
 document.getElementById("mycart").addEventListener("click", getCartPage);
 let tog = document.getElementById("sideCart");
-//   function getCartPage() {
-//     if(tog.style.display == "none"){
-//         tog.style.display= "inline"
-//     }
-//     else if(tog.style.display == "inline"){
-//       tog.style.display= "inline"
-//     }
-//   }
 function getCartPage() {
   if (tog.style.display == "none") {
     tog.style.display = "block";

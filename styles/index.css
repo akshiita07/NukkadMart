@@ -106,27 +106,13 @@ a {
   top: 23px;
 }
 
-#mycart {
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 40px;
-  width: 92px;
-  border-radius: 25px;
-  text-align: center;
-  background-color: #459220;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 18px;
-}
 
 #Andownload {
   margin-top: 60px;
   margin-left: 10%;
 }
 
-.allItemsContainer{
+.allItemsContainer {
   margin: auto;
   width: 85%;
   margin-bottom: 40px;
@@ -187,8 +173,8 @@ a {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-  border-radius:50px; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50px;
   border: 2px solid #b8b6b6;
 
 }
@@ -225,6 +211,7 @@ a {
   width: 310px;
   height: 144px;
 }
+
 #deliveryInfo {
   padding: 15px;
   border-bottom: 1px solid #e0e0e0;
@@ -241,6 +228,7 @@ a {
   color: #666;
   margin: 5px 0 0 0;
 }
+
 #cartEmptyImg>button {
   height: 32px;
   width: 174px;
@@ -294,6 +282,7 @@ a {
 #zz::-webkit-scrollbar {
   display: none;
 }
+
 #cartItems {
   padding: 15px;
   flex-grow: 1;
@@ -336,6 +325,7 @@ a {
   font-weight: bold;
   color: #333;
 }
+
 #bill {
   position: absolute;
   top: 568px;
@@ -350,6 +340,33 @@ a {
   margin: 0;
 }
 
+
+
+#mycart {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40px;
+  width: 92px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #459220;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.startShoppingBtn {
+  margin: auto;
+}
+
+#mycart:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: rgba(0, 128, 0, 0.937);
+}
+
 #bill>button {
   width: 90%;
   height: 30px;
@@ -358,9 +375,11 @@ a {
   color: white;
   margin-top: -10px;
 }
+
 #zz::-webkit-scrollbar {
   display: none;
 }
+
 #login {
   position: absolute;
   text-align: center;
