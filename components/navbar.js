@@ -22,10 +22,10 @@ function navbar() {
       <input type="text" id="search" />
     </div>
     <div id="cat1">
-      <a href="../category.html">Categories</a>
+      <a href="./category.html">Categories</a>
     </div>
     <div id="cat2">
-      <a>Login</a>
+      <a>User</a>
     </div>
     <div id="cat3">
       <a>Profile</a>
