@@ -39,28 +39,20 @@ function navbar() {
   <div id="sugBox"></div>
   <!--         dropdown                  -->
   <div id="myDropdown" class="dropdown-content">
-    <h2>my account</h2>
+    <h2>My Account</h2>
     <p id="localName"></p>
-    <li>my orders</li>
-    <li>saved address</li>
-    <li>my wallet ₹0</li>
-    <li>faq's</li>
-    <li>log out</li>
-    <div id="qr">
-      <img
-        src="https://blinkit.com/16d25a2a463302cf78682e3e3c694122.svg"
-        alt=""
-      />
-      <p>
-        <b> scan the qr code and download blinkit app</b>
-      </p>
+    <li>My Orders</li>
+    <li>Saved Address</li>
+    <li>My Wallet ₹0</li>
+    <li>FAQ's</li>
+    <li>Log Out</li>
     </div>
   </div>
   <!--         dropdown                  -->
 
   <div id="sideCart">
     <div id="openClose">
-      <div><h2>my cart</h2></div>
+      <div><h2>My Cart</h2></div>
       <div><button id="closeCart">X</button></div>
     </div>
     <div id="cartEmptyImg">
@@ -68,18 +60,17 @@ function navbar() {
         src="https://cdn.grofers.com/assets/ui/empty_states/emp_empty_cart.png"
         alt=""
       />
-      <h3>you don't have any items in your cart</h3>
-      <p>your favourite items are just a click away</p>
-      <button>start shopping</button>
+      <h3>You don't have any items in your cart</h3>
+      <p>Your favourite items are just a click away</p>
+      <button>Start shopping</button>
     </div>
-    <div id="subcart">
-    </div>
+    <div id="subcart"></div>
     <div id="zz"></div>
     <div id="bill">
-      <h2>bill details</h2>
+      <h2>Bill Details</h2>
       <p id="totalBill"></p>
-      <p>convenience & safety fee: ₹5</p>
-      <button id="billed"> <a style="color:white;font-weight:bold" href="../address.html"> proceed to pay </a></button>
+      <p>Convenience & Safety fee: ₹5</p>
+      <button id="billed"> <a style="color:white;font-weight:bold" href="../address.html"> Proceed </a></button>
     </div>
     <!-- cart items appending div -->
   </div>
