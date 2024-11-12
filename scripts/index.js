@@ -7,6 +7,10 @@ display.innerHTML = footer();
 
 import navbar from "../components/navbar.js";
 document.getElementById("NAVBAR").innerHTML = navbar();
+// import navbar from './shopkeepernavbar.js';
+
+// document.getElementById('SHOPKEEPER_NAVBAR').innerHTML = navbar();
+
 
 navigator.geolocation.getCurrentPosition(success, error);
 function success(position) {

@@ -64,8 +64,7 @@ function navbar() {
       <p>Your favourite items are just a click away</p>
       <button>Start shopping</button>
     </div>
-    <div id="subcart">
-    </div>
+    <div id="subcart"></div>
     <div id="zz"></div>
     <div id="bill">
       <h2>Bill Details</h2>
