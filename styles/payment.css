@@ -1,0 +1,178 @@
+﻿body {
+    background-color: #ffffe0;
+}
+
+#pay-container {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 500px;
+    background-color: white;
+    display: flex;
+    margin-top: 50px;
+    height: 850px;
+}
+
+/* #pay-cvv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.border {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.iconify {
+    font-size: 25px;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 50px;
+    color: green;
+}
+
+.paymentBoxCntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    border: 1px solid green;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#pay-totalAmount,
+#pay-promo {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    border: 1px solid green;
+    margin-top: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#leftArrow:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#pay-option {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: flex-start;
+    border: 1px solid green;
+    margin-top: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#pay-option div {
+    width: 20%;
+    color: grey;
+    cursor: pointer;
+    text-align: center;
+}
+
+.active-option {
+    background-color: rgba(0, 128, 0, 0.759);
+    color: white;
+}
+
+#pay-input{
+    width: 70%;
+}
+
+#pay-inputs>div {
+    display: none;
+    width: 70%;
+    margin: auto;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+.active-input {
+    display: block;
+}
+
+#button_div {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 128, 0, 0.769);
+    font-weight: bolder;
+}
+
+#button {
+    width: 100%;
+    height: 40px;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 3px;
+}
+
+#pay-left {
+    width: 70%;
+    color: gray;
+    margin-top: 70px;
+    background-color: white;
+    margin-bottom: 250px;
+}
+
+#pay-right {
+    width: 29%;
+    margin-top: 70px;
+    margin-left: 1%;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#cartDisplayRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cData {
+    text-align: center;
+}
+
+/* Hide inactive payment sections */
+#pay-input>div {
+    display: none;
+}
+
+#pay-input>.active-input {
+    display: block;
+}
+
+/* Styling for active option button */
+#pay-option .active-option {
+    font-weight: bolder;
+    cursor: pointer;
+    color: black;
+
+}

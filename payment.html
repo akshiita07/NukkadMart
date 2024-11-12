@@ -1,363 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        background-color: #f9f9f9;
-      }
-      #pay-container {
-        /* border: 1px solid red; */
-        width: 70%;
-        margin: auto;
-        height: 700px;
-        display: flex;
-        margin-bottom: 150px;
-        padding-bottom: 500px;
-        background-color: white;
-      }
-      .border {
-        border-bottom: 1px solid lightgray;
-      }
-      .flex {
-        display: flex;
-      }
-      .iconify {
-        font-size: 25px;
-        padding-top: 30px;
-        margin-left: 20px;
-        color: green;
-        margin-right: 50px;
-      }
-      #pay-totalAmount {
-        display: flex;
-        justify-content: space-between;
-        /* border: 1px solid lightgray; */
-        width: 100%;
-        margin: auto;
-        /* padding-left: 50px; */
-        /* padding-right: 50px; */
-      }
-      #pay-totalAmount div {
-        padding-left: 50px;
-        padding-right: 50px;
-      }
-      #pay-promo {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        margin: auto;
-        border: 1px solid lightgrey;
-        margin-top: 15px;
-        height: 40px;
-        padding-bottom: 30px;
-      }
-      #pay-option {
-        display: flex;
-        width: 70%;
-        margin: auto;
-        border: 1px solid lightgrey;
-        /* justify-content: space-evenly; */
-        text-align: center;
-      }
-      #pay-option div {
-        border-right: 1px solid lightgray;
-        width: 20%;
-        color: grey;
-      }
-      #pay-option div p {
-        margin-right: 35px;
-      }
-      #pay-input {
-        width: 70%;
-        margin: auto;
-        border: 1px solid lightgrey;
-      }
-      #pay-cvv {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        margin-top: 28px;
-      }
-      #checkbox {
-        width: 70%;
-        margin-top: 28px;
-        margin: auto;
-      }
-      #button_div {
-        width: 70%;
-        margin-top: 28px;
-        margin: auto;
-      }
-      #button {
-        width: 100%;
-        height: 40px;
-        background-color: #cccccc;
-        border: none;
-        border-radius: 3px;
-      }
-      #pay-left {
-        border-left: 1px solid lightgray;
-        border-right: 1px solid lightgray;
-        color: gray;
-        width: 70%;
-        margin-bottom: 250px;
-        margin-top: 70px;
-        background-color: white;
-      }
-      #pay-right {
-        width: 29%;
-        border: 1px solid lightgray;
-        height: 500px;
-        margin-left: 1%;
-        margin-top: 70px;
-        background-color: white;
-      }
 
-      #paymentsection {
-        border: 1px solid lightgray;
-      }
-      #cData {
-        height: 90%;
-        overflow: scroll;
-      }
-      #cData > div {
-        display: flex;
-        outline: 1px solid darkgray;
-      }
-      #cData > div > img {
-        width: 100px;
-        height: 100px;
-      }
-      #cData::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
-    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
 
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <script src="./scripts/index.js" type="module"></script>
-    <link rel="stylesheet" href="./styles/footer.css" />
-  </head>
-  <body>
-    <div id="NAVBAR"></div>
+  <!-- Styles and Fonts -->
+  <link rel="stylesheet" href="./styles/payment.css">
 
-    <div id="pay-container">
-      <div id="pay-left">
-        <div class="border flex">
-          <div>
-            <span
-              class="iconify"
-              data-icon="akar-icons:circle-check-fill"
-            ></span>
-          </div>
-          <div>
-            <p>Phone Number Verification</p>
-            <p>+91000000000</p>
-          </div>
+  <!-- External Scripts and Links -->
+  <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./scripts/index.js" type="module"></script>
+  <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <div id="NAVBAR"></div>
+
+  <!-- Payment Container -->
+  <div id="pay-container">
+    <!-- Left Payment Details -->
+    <div id="pay-left">
+      <div class="border flex">
+        <span class="iconify" data-icon="akar-icons:circle-check-fill"></span>
+        <div>
+          <p>Phone Number Verification</p>
+          <p>+91xxxxxxxxxx</p>
         </div>
-        <div id class="border flex">
-          <div>
-            <span
-              class="iconify"
-              data-icon="akar-icons:circle-check-fill"
-            ></span>
-          </div>
-          <div>
-            <p>Delivery Address</p>
-            <p>
-              home: South civil line, baker street, Beadonpura, Karol Bagh, New
-              Delhi
-            </p>
-          </div>
+      </div>
+
+      <div class="border flex">
+        <span class="iconify" data-icon="akar-icons:circle-check-fill"></span>
+        <div>
+          <p>Delivery Address</p>
+          <p>Home: Hostel-A, Thapar Institute of Engineering & Technology, Patiala, Punjab</p>
         </div>
-        <div class="border flex">
-          <div>
-            <span
-              class="iconify"
-              data-icon="akar-icons:circle-check-fill"
-            ></span>
-          </div>
-          <div>
-            <p>Delivery Date & Time</p>
-            <p>Delivery in 8 minutes</p>
-          </div>
+      </div>
+
+      <div class="border flex">
+        <span class="iconify" data-icon="akar-icons:circle-check-fill"></span>
+        <div>
+          <p>Delivery Date & Time</p>
+          <p>Delivery in 14 minutes</p>
         </div>
-        <div id="paymentsection" class=".border">
-          <div class="flex">
-            <span class="iconify" data-icon="ph:number-circle-four"></span>
-            <h1 style="color: black">Payment</h1>
+      </div>
+
+      <div id="paymentsection" class="border">
+        <div class="flex">
+          <span class="iconify" data-icon="ph:number-circle-four"></span>
+          <h1 style="color: black">Payment</h1>
+        </div>
+
+        <!-- Total Amount -->
+        <div style="border: 1px solid black; width: 74%; margin: auto">
+          <div id="pay-totalAmount">
+            <p>Total Amount</p>
+            <p>₹845</p>
           </div>
-
-          <!-- total amount div -->
-          <div style="border: 1px solid lightgrey; width: 70%; margin: auto">
-            <div id="pay-totalAmount">
-              <div>
-                <p>Total Amount</p>
-              </div>
-              <div>
-                <p>₹845</p>
-              </div>
-            </div>
-            <hr style="width: 60%; margin: auto" />
-            <div id="pay-totalAmount">
-              <div>
-                <p style="color: black">Amount Payable (incl. of all taxes)</p>
-              </div>
-              <div>
-                <p>₹845</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- promo code div -->
-          <div id="pay-promo">
-            <div class="flex">
-              <div>
-                <span class="iconify" data-icon="bx:bxs-offer"></span>
-              </div>
-              <div>
-                <p style="padding-top: 15px">Promo code & Bank offers</p>
-              </div>
-            </div>
-
+          <hr style="width: 60%; margin: auto">
+          <div id="pay-totalAmount">
             <div>
-              <span class="iconify" data-icon="bi:chevron-right"></span>
+              <p style="color: black">Amount Payable (incl. of all taxes)</p>
+            </div>
+            <div>
+              <p>₹845</p>
             </div>
           </div>
-          <!-- card div -->
-          <div>
-            <div id="pay-option">
-              <div>
-                <p>Wallet</p>
-              </div>
-              <div>
-                <p>UPI</p>
-              </div>
-              <div style="background-color: green; color: white">
-                <p>Card</p>
-              </div>
-              <div><p>Cash</p></div>
-              <div><p>NetBanking</p></div>
+        </div>
+
+        <!-- Promo Code -->
+        <div id="pay-promo">
+          <div class="flex">
+            <span class="iconify" data-icon="bx:bxs-offer"></span>
+            <p style="padding-top: 15px">Promo code & Bank offers</p>
+          </div>
+          <span id="leftArrow" class="iconify" data-icon="bi:chevron-right"></span>
+        </div>
+
+        <!-- Payment Options -->
+        <div class="paymentBoxCntr">
+          <div id="pay-option">
+            <div class="option" data-option="wallet">Wallet</div>
+            <div class="option" data-option="upi">UPI</div>
+            <div class="option active-option" data-option="card">Card</div>
+            <div class="option" data-option="cash">Cash</div>
+            <div class="option" data-option="netbanking">NetBanking</div>
+          </div>
+
+          <!-- Input Section -->
+          <div id="pay-input">
+            <div id="wallet-section">
+              <label>Choose Wallet</label>
+              <select style="width: 100%; height: 40px;">
+                <option>Paytm</option>
+                <option>PhonePe</option>
+                <option>Google Pay</option>
+              </select>
             </div>
-            <!-- input section -->
-            <div id="pay-input">
-              <div style="margin-top: 50px">
-                <small style="margin-left: 100px">Card Number</small><br />
-                <input
-                  style="width: 60%; height: 40px; margin-left: 100px"
-                  type="number"
-                  placeholder="CardNumber"
-                />
+
+            <div id="upi-section">
+              <label>Enter UPI ID</label><br>
+              <input style="width: 100%; height: 40px;" type="text" placeholder="yourupi@bank">
+            </div>
+
+            <div id="card-section" class="active-input">
+              <div style="margin-top: 10px">
+                <small style="margin-left: 100px">Card Number</small><br>
+                <input style="width: 60%; height: 40px; margin-left: 100px" type="number" placeholder="CardNumber">
               </div>
               <div id="pay-cvv">
                 <div class="flex">
                   <div>
-                    <small style="margin-left: 100px">Valid Through</small
-                    ><br />
-                    <input
-                      style="height: 40px; width: 80px; margin-left: 100px"
-                      type="number"
-                      placeholder="MM"
-                    />
+                    <small style="margin-left: 100px">Valid Through</small><br>
+                    <input style="height: 40px; width: 80px; margin-left: 100px" type="number" placeholder="MM">
                   </div>
                   <div>
-                    <br />
-                    <input
-                      style="height: 40px; width: 80px"
-                      type="number"
-                      placeholder="YY"
-                    />
+                    <br>
+                    <input style="height: 40px; width: 80px" type="number" placeholder="YY">
                   </div>
                 </div>
-                <div style="margin-left: 10px">
-                  <small style="margin-left: 10px">CVV</small><br />
-                  <input
-                    style="height: 40px; width: 100px; margin-left: 10px"
-                    type="number"
-                    placeholder="cvv"
-                  />
-                </div>
-              </div>
-              <!-- checkbox -->
-              <div id="checkbox" class="flex">
-                <div><input style="margin-top: 20px" type="checkbox" /></div>
-                <div>
-                  <p>
-                    Save this card for future use<br />
-                    It's perfectly secure
-                  </p>
+                <div style="margin-left:90px">
+                  <small style="margin-left: 10px">CVV</small><br>
+                  <input style="height: 40px; width: 100px; margin-left: 10px" type="number" placeholder="cvv">
                 </div>
               </div>
 
-              <!-- button -->
-              <div id="button_div">
-                <button id="button">Pay Now</button>
+              <!-- Save Card Checkbox -->
+              <div id="checkbox" class="flex">
+                <input type="checkbox">
+                <p>Save this card for future use</p>
               </div>
             </div>
+
+            <div id="cash-section">
+              <p>Cash payment will be collected at the time of delivery.</p>
+            </div>
+
+            <div id="netbanking-section">
+              <label>Choose Bank</label>
+              <select style="width: 100%; height: 40px;">
+                <option>SBI</option>
+                <option>HDFC</option>
+                <option>ICICI</option>
+                <option>Axis</option>
+              </select>
+            </div>
+
           </div>
         </div>
       </div>
 
-      <div id="pay-right" class="border">
-        <div style="display: flex; justify-content: space-around">
-          <div>
-            <p>My Cart</p>
-          </div>
-          <div>
-            <p id="len"></p>
-          </div>
-        </div>
-        <div id="cData">
-          <!-- <img src="./images/cart_image.png" width="100%" /> -->
-        </div>
+      <!-- Pay Button -->
+      <div id="button_div">
+        <button id="button">Pay Now</button>
       </div>
     </div>
 
-    <!-- footer div -->
-    <div id="footer_display"></div>
-  </body>
-</html>
-<script type="module">
-  let pay_btn = document.getElementById("button");
-  pay_btn.addEventListener("click", payment);
+    <!-- Right Cart Section -->
+    <div id="pay-right" class="border">
+      <div id="cartDisplayRight" style="display: flex; justify-content: space-around;">
+        <p>My Cart</p>
+        <p id="len"></p>
+      </div>
+      <div id="cData"></div>
+    </div>
+  </div>
 
-  function payment() {
-    alert("Payment Successful Thank you for Shopping");
-    localStorage.removeItem("cartdata");
-    localStorage.removeItem("ttl");
-    window.location.href = "./index.html";
-  }
+  <!-- Footer Section -->
+  <div id="footer_display"></div>
 
-  let data = JSON.parse(localStorage.getItem("cartdata"));
-  //   console.log("data:", data);
-  document.getElementById("len").innerText = data.length + " " + "items";
-  disp(data);
-  function disp(arr) {
-    document.getElementById("cData").innerHTML = "";
-    arr.map((elem) => {
-      let mDiv = document.createElement("div");
-      let { image, name, price } = elem;
-      let img = document.createElement("img");
-      img.src = image;
-      let npdiv = document.createElement("div");
+  <!-- Payment Script -->
+  <script type="module">
+    let pay_btn = document.getElementById("button");
+    pay_btn.addEventListener("click", payment);
 
-      let n = document.createElement("h3");
-      n.innerText = name;
+    function payment() {
+      alert("Payment Successful. Thank you for Shopping!");
+      localStorage.removeItem("cartdata");
+      localStorage.removeItem("ttl");
+      window.location.href = "./userHomePage.html";
+    }
 
-      let p = document.createElement("p");
-      p.innerText = "₹" + price;
+    let data = JSON.parse(localStorage.getItem("cartdata"));
+    document.getElementById("len").innerText = data.length + " items";
+    disp(data);
 
-      npdiv.append(n, p);
-      mDiv.append(img, npdiv);
-      document.getElementById("cData").append(mDiv);
+    function disp(arr) {
+      document.getElementById("cData").innerHTML = "";
+      arr.forEach((elem) => {
+        let mDiv = document.createElement("div");
+        let { image, name, price } = elem;
+
+        let img = document.createElement("img");
+        img.src = image;
+
+        let npdiv = document.createElement("div");
+        let n = document.createElement("h3");
+        n.innerText = name;
+
+        let p = document.createElement("p");
+        p.innerText = "₹" + price;
+
+        npdiv.append(n, p);
+        mDiv.append(img, npdiv);
+        document.getElementById("cData").append(mDiv);
+      });
+    }
+
+    // Select payment options and input sections
+    const options = document.querySelectorAll("#pay-option .option");
+    const inputSections = document.querySelectorAll("#pay-input > div");
+
+    // Add event listeners to payment options
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        // Remove active class from all options
+        options.forEach(opt => opt.classList.remove("active-option"));
+
+        // Add active class to the clicked option
+        option.classList.add("active-option");
+
+        // Hide all input sections
+        inputSections.forEach(section => section.classList.remove("active-input"));
+
+        // Show the corresponding input section based on the selected option
+        const selectedOption = option.getAttribute("data-option");
+        document.getElementById(`${selectedOption}-section`).classList.add("active-input");
+      });
     });
-  }
-</script>
+
+    // let pay_btn = document.getElementById("button");
+    // pay_btn.addEventListener("click", function () {
+    //   // Perform any necessary actions (like payment processing)
+    //   alert("Payment Successful. Thank you for Shopping!");
+
+    //   // Redirect to another HTML page
+    //   window.location.href = "your-next-page.html";  // Replace with your target page URL
+    // });
+
+
+  </script>
+</body>
+
+</html>
