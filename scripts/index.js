@@ -285,7 +285,7 @@ function displayCart(cartArr) {
     pDiv.append(p, pr, wt);
 
     let btn = document.createElement("button");
-    btn.innerText = "Remove Items";
+    btn.innerText = "Remove Item";
 
     btn.id = "removebtn";
 
@@ -307,10 +307,11 @@ function displayCart(cartArr) {
   document.getElementById("myCart").innerText = "₹" + ps;
 }
 function remove(index) {
-  cartArr.splice(index, 1);
-  localStorage.setItem("cartdata1", JSON.stringify(cartArr));
-  displayCart(cartArr);
+  cartArr.splice(index, 1); // Remove the item from the array
+  localStorage.setItem("cartdata", JSON.stringify(cartArr)); // Save updated array to 'cartdata'
+  displayCart(cartArr); // Refresh the cart display
 }
+
 
 // document.getElementById("billed").addEventListener("click", () => {
 //   window.location.href = "address.html";
