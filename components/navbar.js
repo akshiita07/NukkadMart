@@ -25,11 +25,8 @@ function navbar() {
       <a href="./category.html">Categories</a>
     </div>
     <div id="cat2">
-      <a>User</a>
-    </div>
-    <div id="cat3">
-      <a>Profile</a>
-    </div>
+    <a href="index.html">Logout</a>
+</div>
 
     <div id="mycart">
       <span class="material-icons carticon">shopping_cart</span>
@@ -57,7 +54,7 @@ function navbar() {
     </div>
     <div id="cartEmptyImg">
       <img
-        src="https://cdn.grofers.com/assets/ui/empty_states/emp_empty_cart.png"
+        src="./images/cartBanner.png"
         alt=""
       />
       <h3>You don't have any items in your cart</h3>

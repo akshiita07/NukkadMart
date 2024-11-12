@@ -22,4 +22,11 @@
     console.log(city_value);
     window.location.href = "map.html";
   }
+  document.querySelector("#cancel_btn").addEventListener("click", goBack);
+  function goBack() {
+    let city_value = document.querySelector("#area").value;
+    localStorage.setItem("city", JSON.stringify(city_value));
+    console.log(city_value);
+    window.location.href = "userHomePage.html";
+  }
 </script>
