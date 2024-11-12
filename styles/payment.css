@@ -9,7 +9,7 @@
     background-color: white;
     display: flex;
     margin-top: 50px;
-    height: 850px;
+    height: 1000px;
 }
 
 /* #pay-cvv{
@@ -140,7 +140,7 @@
     width: 29%;
     margin-top: 70px;
     margin-left: 1%;
-    height: 500px;
+    height: 1000px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -154,10 +154,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 90px;
 }
 
 #cData {
+    position: relative;
+    top: 15px;
+    height: 1000px;
     text-align: center;
+}
+
+#cData>div>img{
+    width: 100px;
+    height: 100px;
 }
 
 /* Hide inactive payment sections */

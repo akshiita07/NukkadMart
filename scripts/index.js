@@ -295,7 +295,7 @@ function displayCart(cartArr) {
     });
 
     document.getElementById("totalBill").innerText =
-      "bill total:" + " " + "₹" + billTotal;
+      "Bill Total:" + " " + "₹" + billTotal;
     mainDiv.append(imgdiv, pDiv, btn);
 
     document.getElementById("zz").append(mainDiv);

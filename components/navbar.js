@@ -57,7 +57,7 @@ function navbar() {
     </div>
     <div id="cartEmptyImg">
       <img
-        src="https://cdn.grofers.com/assets/ui/empty_states/emp_empty_cart.png"
+        src="./images/cartBanner.png"
         alt=""
       />
       <h3>You don't have any items in your cart</h3>
