@@ -59,7 +59,7 @@ function navbar() {
       />
       <h3>You don't have any items in your cart</h3>
       <p>Your favourite items are just a click away</p>
-      <button id="mycart" class="startShoppingBtn">Start Shopping</button>
+      <button id="mycart" class="startShoppingBtn" onclick="startShopping()">Start Shopping</button>
     </div>
     <div id="subcart"></div>
     <div id="zz"></div>
@@ -67,8 +67,9 @@ function navbar() {
       <h2>Bill Details</h2>
       <p id="totalBill"></p>
       <p>Convenience & Safety fee: ₹5</p>
-      <button class="bill_takeaway" id="billed"> <a style="color:white;font-weight:bold" href="./address.html"> Delivery </a></button>
-      <button class="bill_delivery" id="billed"> <a style="color:white;font-weight:bold" href="./payment.html"> Takeaway </a></button>
+      <button class="bill_takeaway" id="billed1"> <a style="color:white;font-weight:bold" href="./address.html"> Delivery </a></button>
+      <button class="bill_delivery" id="billed2"> <a style="color:white;font-weight:bold" href="./payment.html"> Takeaway </a></button>
+      <button class="bill_delivery" id="clr_cart" style="color:white;font-weight:bold" onclick="clearmycart()">CLEAR CART</button>
     </div>
     <!-- cart items appending div -->
   </div>

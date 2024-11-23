@@ -249,8 +249,25 @@ if (cartArr.length != 0) {
   document.getElementById("zz").style.display = "inline";
 } else {
   document.getElementById("cartEmptyImg").style.display = "block";
-  document.getElementById("billed").style.opacity = "0.1";
+  document.getElementById("billed1").style.opacity = "0.1";
+  document.getElementById("billed2").style.opacity = "0.1";
 }
+
+window.clearmycart = function () {
+  alert("Cart Cleared");
+
+  // Clear cart data
+  localStorage.removeItem("cartdata");
+  localStorage.removeItem("ttl");
+
+  // Redirect user
+  window.location.href = "./userHomePage.html";
+};
+
+window.startShopping = function () {
+  // let tog = document.getElementById("sideCart");
+  tog.style.display = "none";
+};
 
 displayCart(cartArr);
 function displayCart(cartArr) {
@@ -708,3 +725,4 @@ pcArr.map((ele) => {
     btn.innerText = +btn.innerText + +1;
   });
 });
+
