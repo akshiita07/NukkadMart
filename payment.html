@@ -181,10 +181,31 @@
 
     function payment() {
       alert("Payment Successful. Thank you for Shopping!");
+
+      // Retrieve existing orders from localStorage
+      let existingOrders = JSON.parse(localStorage.getItem("orders")) || [];
+
+      // Add a new order with a timestamp and cart data
+      const newOrder = {
+        id: "ORD" + Math.floor(1000 + Math.random() * 9000), // Generate unique order ID
+        items: data, // Cart data
+        timestamp: Date.now(), // Current timestamp
+        name: "John Doe", // Replace with user's name if available
+      };
+
+      existingOrders.push(newOrder);
+
+      // Save updated orders back to localStorage
+      localStorage.setItem("orders", JSON.stringify(existingOrders));
+
+      // Clear cart data
       localStorage.removeItem("cartdata");
       localStorage.removeItem("ttl");
+
+      // Redirect user
       window.location.href = "./userHomePage.html";
     }
+
 
     let data = JSON.parse(localStorage.getItem("cartdata"));
     document.getElementById("len").innerText = data.length + " items";

@@ -1,56 +1,209 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Essentials Made Easy | NukkadMart</title>
-  <link rel="icon" type="image/x-icon"
-    href="images/icon.png" />
 
-  <link rel="stylesheet" href="./styles/cart.css" />
-  <link rel="stylesheet" href="./styles/footer.css" />
-  <script src="./scripts/index.js" type="module"></script>
-  <link rel="stylesheet" href="./styles/index.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopkeeper Orders | NukkadMart</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
+
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Inline CSS for Order Table -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        #orderContainer {
+            margin: 110px auto;
+            width: 80%;
+            background: #ffffff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #d7ebf9;
+        }
+
+        .btn-complete {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-complete:hover {
+            background-color: #218838;
+        }
+    </style>
+
+    <script>
+        // Function to render orders dynamically
+        function renderOrders() {
+            const ordersTable = document.getElementById("ordersTableBody");
+            const orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+            // Clear existing table rows
+            ordersTable.innerHTML = "";
+
+            // Populate rows dynamically
+            orders.forEach((order, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${order.id}</td>
+          <td>${order.name}</td>
+          <td>${new Date(order.timestamp).toLocaleString()}</td>
+          <td><button class="btn-complete" onclick="markAsComplete(${index})">Complete</button></td>
+        `;
+                ordersTable.appendChild(row);
+            });
+        }
+
+        // Mark an order as complete
+        function markAsComplete(orderIndex) {
+            let orders = JSON.parse(localStorage.getItem("orders")) || [];
+            orders.splice(orderIndex, 1); // Remove the completed order
+            localStorage.setItem("orders", JSON.stringify(orders));
+            renderOrders(); // Refresh the table
+        }
+
+        // Listen for localStorage changes
+        window.addEventListener("storage", (event) => {
+            if (event.key === "orders") {
+                renderOrders();
+            }
+        });
+
+        // Initial render on page load
+        document.addEventListener("DOMContentLoaded", renderOrders);
+    </script>
 </head>
 
 <body>
-  <!-- Navbar Structure -->
-  <div id="mainNav">
-    <div id="logo">
-        <img src="./images/navLogo.png" alt="Logo" height="100%" width="100%" />
+    <!-- Navbar Structure -->
+    <div id="mainNav">
+        <div id="logo">
+            <img src="./images/navLogo.png" alt="Logo" height="100%" width="100%" onclick="location.href='index.html'" style="cursor: pointer;"/>
+        </div>
+        <div id="searchbox">
+            <button id="sbtn">
+                <i class="material-icons">Search</i>
+            </button>
+            <input type="text" id="search" placeholder="Search Categories" />
+        </div>
+        <div id="cat1">
+            <a href="./shopkeeperOrder.html">Orders</a>
+        </div>
+        <div id="cat2">
+            <a href="index.html">Logout</a>
+        </div>
     </div>
-    <div id="searchbox">
-        <button id="sbtn">
-            <i class="material-icons">search</i>
-        </button>
-        <input type="text" id="search" placeholder="Search Catergories" />
+
+    <!-- Order Section -->
+    <div id="orderContainer">
+        <h2>Orders Received</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Order ID</th>
+                    <th>Item Name</th>
+                    <th>Order Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="ordersTableBody">
+                <!-- Orders will be dynamically populated here -->
+            </tbody>
+        </table>
     </div>
-    <div id="cat1">
-        <a href="./shopkeeperOrder.html">Orders</a>
-    </div>
-    <div id="cat2">
-      <a href="index.html">Logout</a>
-  </div>
-</div>
-
-<div id="sugBox"></div>
-
-<!-- Dropdown menu -->
-<div id="myDropdown" class="dropdown-content">
-    <h2>My Account</h2>
-    <ul>
-        <li>My Orders</li>
-        <li>Saved Address</li>
-        <li>My Wallet ₹0</li>
-        <li>FAQ's</li>
-        <li>Log Out</li>
-    </ul>
-</div>
-
-<!-- Link to your JavaScript file (if needed for interactivity) -->
-<script src="script.js"></script>
 </body>
+<script>
+    // Render orders dynamically in the shopkeeper's table
+    function renderOrders() {
+        const ordersTable = document.getElementById("ordersTableBody");
+        const orders = JSON.parse(localStorage.getItem("orders")) || [];
 
+        // Clear the existing table rows
+        ordersTable.innerHTML = "";
+
+        // Populate table rows with order data
+        orders.forEach((order, index) => {
+            const row = document.createElement("tr");
+
+            // Format the order items
+            const itemNames = order.items.map((item) => item.name).join(", ");
+
+            row.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${order.id}</td>
+      <td>${itemNames}</td>
+      <td>${new Date(order.timestamp).toLocaleString()}</td>
+      <td><button class="btn-complete" onclick="markAsComplete(${index})">Complete</button></td>
+    `;
+            ordersTable.appendChild(row);
+        });
+    }
+
+    // Mark an order as completed
+    function markAsComplete(orderIndex) {
+        let orders = JSON.parse(localStorage.getItem("orders")) || [];
+        orders.splice(orderIndex, 1); // Remove the completed order
+        localStorage.setItem("orders", JSON.stringify(orders));
+        renderOrders(); // Refresh the table
+    }
+
+    // Listen for localStorage changes
+    window.addEventListener("storage", (event) => {
+        if (event.key === "orders") {
+            renderOrders();
+        }
+    });
+
+    // Initial render
+    document.addEventListener("DOMContentLoaded", renderOrders);
+
+</script>
+
+</html>
