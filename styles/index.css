@@ -328,12 +328,19 @@ a {
 
 #bill {
   position: absolute;
-  top: 568px;
+  top: 480px;
   width: 100%;
   padding: 15px;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   border-radius: 8px;
+}
+
+.bill_takeaway{
+  margin: 10px 10px;
+}
+.bill_delivery{
+  margin: 10px 10px;
 }
 
 #bill>h2 {
