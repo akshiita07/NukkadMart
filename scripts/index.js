@@ -27,7 +27,7 @@ function error() {
 
 document.getElementById("logo").addEventListener("click", logo);
 function logo() {
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 }
 
 async function loc(lat, lon) {

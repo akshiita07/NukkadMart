@@ -22,7 +22,7 @@ function navbar() {
       <input type="text" id="search" />
     </div>
     <div id="cat1">
-      <a href="../category.html">Categories</a>
+      <a href="category.html">Categories</a>
     </div>
     <div id="cat2">
     <a href="../index.html">Logout</a>
