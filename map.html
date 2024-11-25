@@ -26,6 +26,9 @@
             </div>
             <div id="map_save">
                 <h3>Move the Map to Place the Pin on Your Delivery Location</h3>
+                <!-- Add a text input field for location confirmation -->
+                <label for="address_confirm">Confirm Your Delivery Address:</label>
+                <input type="text" id="address_confirm" name="address_confirm" placeholder="Enter your delivery address" required>
                 <button id="save_btn">Save</button>
                 <button id="map_cancel_btn">Cancel</button>
             </div>
@@ -36,13 +39,33 @@
         import address from './scripts/address.js';
         let city = JSON.parse(localStorage.getItem("city"));
         map(city);
+
+        // Function to update map based on city
         function map(value) {
             let url = `https://maps.google.com/maps?q=${value}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
             document.querySelector("iframe").src = url;
         }
+
+        // Validate form before saving
+        function validateAddressForm() {
+            const addressField = document.querySelector("#address_confirm");
+
+            // Ensure the address field is filled
+            if (!addressField.value.trim()) {
+                alert("Please confirm your delivery address.");
+                return false;
+            }
+            return true;
+        }
+
+        // Save button click event
         document.querySelector("#save_btn").addEventListener("click", () => {
-            window.location.href = "payment.html";
+            if (validateAddressForm()) {
+                window.location.href = "payment.html";
+            }
         });
+
+        // Cancel button click event
         document.querySelector("#map_cancel_btn").addEventListener("click", () => {
             window.location.href = "userHomePage.html";
         });

@@ -36,13 +36,13 @@ function footer(){
               </div>
             </div>
             <div class="social-icons">
-              <a href="#" aria-label="Facebook">
+              <a href="https://github.com/akshiita07/NukkadMart" aria-label="Facebook">
                 <img src="images/facebook-logo.webp" alt="Facebook" width="24" height="24">
               </a>
-              <a href="#" aria-label="Instagram">
+              <a href="https://github.com/akshiita07/NukkadMart" aria-label="Instagram">
                 <img src="images/instagram-logo.webp" alt="Instagram" width="24" height="24">
               </a>
-              <a href="#" aria-label="Twitter">
+              <a href="https://github.com/akshiita07/NukkadMart" aria-label="Twitter">
                 <img src="images/twitter.webp" alt="Twitter" width="24" height="24">
               </a>
             </div>

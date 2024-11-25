@@ -180,29 +180,68 @@
     pay_btn.addEventListener("click", payment);
 
     function payment() {
+      // Get the active payment option
+      const activeOption = document.querySelector(".option.active-option").getAttribute("data-option");
+
+      // Get the corresponding input section for validation
+      const activeInput = document.querySelector(`#${activeOption}-section`);
+
+      // Validation flags
+      let isValid = true;
+      let errorMessage = "";
+
+      // Perform validation based on the selected option
+      if (activeOption === "wallet") {
+        const walletSelect = activeInput.querySelector("select");
+        if (!walletSelect.value) {
+          isValid = false;
+          errorMessage = "Please select a wallet.";
+        }
+      } else if (activeOption === "upi") {
+        const upiInput = activeInput.querySelector("input[type='text']");
+        if (!upiInput.value) {
+          isValid = false;
+          errorMessage = "Please enter your UPI ID.";
+        }
+      } else if (activeOption === "card") {
+        const cardInputs = activeInput.querySelectorAll("input[type='number']");
+        cardInputs.forEach(input => {
+          if (!input.value) {
+            isValid = false;
+            errorMessage = "Please fill all card details.";
+          }
+        });
+      } else if (activeOption === "netbanking") {
+        const bankSelect = activeInput.querySelector("select");
+        if (!bankSelect.value) {
+          isValid = false;
+          errorMessage = "Please select a bank.";
+        }
+      } else if (activeOption === "cash") {
+        // Cash doesn't need validation, as it's a confirmation of cash on delivery
+      }
+
+      // If validation fails, show an alert and return
+      if (!isValid) {
+        alert(errorMessage);
+        return;
+      }
+
+      // Proceed with payment if validation is successful
       alert("Payment Successful. Thank you for Shopping!");
 
-      // Retrieve existing orders from localStorage
+      // Existing payment logic
       let existingOrders = JSON.parse(localStorage.getItem("orders")) || [];
-
-      // Add a new order with a timestamp and cart data
       const newOrder = {
-        id: "ORD" + Math.floor(1000 + Math.random() * 9000), // Generate unique order ID
-        items: data, // Cart data
-        timestamp: Date.now(), // Current timestamp
-        name: "John Doe", // Replace with user's name if available
+        id: "ORD" + Math.floor(1000 + Math.random() * 9000),
+        items: data,
+        timestamp: Date.now(),
+        name: "John Doe",
       };
-
       existingOrders.push(newOrder);
-
-      // Save updated orders back to localStorage
       localStorage.setItem("orders", JSON.stringify(existingOrders));
-
-      // Clear cart data
       localStorage.removeItem("cartdata");
       localStorage.removeItem("ttl");
-
-      // Redirect user
       window.location.href = "./userHomePage.html";
     }
 

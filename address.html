@@ -1,32 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/address.css" />
-    <title>Document</title>
+    <title>Address</title>
   </head>
   <body>
     <div id="address_cont"></div>
   </body>
+
+  <script type="module">
+    import address from "./scripts/address.js";
+    let add = document.querySelector("#address_cont");
+    add.innerHTML = address();
+
+    // Bind the event listeners after the content is added to the page
+    document.querySelector("#continue_btn").addEventListener("click", display);
+    document.querySelector("#cancel_btn").addEventListener("click", goBack);
+
+    function validateForm() {
+      const areaField = document.querySelector("#area");
+      const nameField = document.querySelector("#first_last"); // Updated field ID for name
+      const flatField = document.querySelector("#flat_no"); // Field for flat/house number
+      const streetField = document.querySelector("#street_no"); // Field for street name
+
+      let isValid = true;
+      let errorMessage = "";
+
+      // Check if area is provided
+      if (!areaField.value.trim()) {
+        isValid = false;
+        errorMessage += "Please enter the area.\n";
+      }
+
+      // Check if name is provided
+      if (!nameField.value.trim()) {
+        isValid = false;
+        errorMessage += "Please enter your name.\n";
+      }
+
+      // Check if flat/house number is provided
+      if (!flatField.value.trim()) {
+        isValid = false;
+        errorMessage += "Please enter your flat/house number.\n";
+      }
+
+      // Check if street is provided
+      if (!streetField.value.trim()) {
+        isValid = false;
+        errorMessage += "Please enter your street name.\n";
+      }
+
+      // Show errors if any
+      if (!isValid) {
+        alert(errorMessage);
+      }
+
+      return isValid;
+    }
+
+    // Function to display the next page
+    function display() {
+      if (validateForm()) {
+        let city_value = document.querySelector("#area").value;
+        localStorage.setItem("city", JSON.stringify(city_value));
+        console.log(city_value);
+        window.location.href = "map.html"; // Redirect to the map page
+      }
+    }
+
+    // Function to go back to the previous page
+    function goBack() {
+      let city_value = document.querySelector("#area").value;
+      localStorage.setItem("city", JSON.stringify(city_value));
+      console.log(city_value);
+      window.location.href = "userHomePage.html"; // Redirect to the user homepage
+    }
+  </script>
+
 </html>
-<script type="module">
-  import address from "./scripts/address.js";
-  let add = document.querySelector("#address_cont");
-  add.innerHTML = address();
-  document.querySelector("#continue_btn").addEventListener("click", display);
-  function display() {
-    let city_value = document.querySelector("#area").value;
-    localStorage.setItem("city", JSON.stringify(city_value));
-    console.log(city_value);
-    window.location.href = "map.html";
-  }
-  document.querySelector("#cancel_btn").addEventListener("click", goBack);
-  function goBack() {
-    let city_value = document.querySelector("#area").value;
-    localStorage.setItem("city", JSON.stringify(city_value));
-    console.log(city_value);
-    window.location.href = "userHomePage.html";
-  }
-</script>
