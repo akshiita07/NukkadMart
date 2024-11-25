@@ -2,7 +2,7 @@ function navbar() {
   return ` <div id="mainNav">
     <div id="logo">
       <img 
-        src="./images/navLogo.png"
+        src="../images/navLogo.png"
         alt=""
         height="100%"
           width="100%"
@@ -22,10 +22,10 @@ function navbar() {
       <input type="text" id="search" />
     </div>
     <div id="cat1">
-      <a href="./category.html">Categories</a>
+      <a href="../category.html">Categories</a>
     </div>
     <div id="cat2">
-    <a href="index.html">Logout</a>
+    <a href="../index.html">Logout</a>
 </div>
 
     <div id="mycart">
@@ -54,7 +54,7 @@ function navbar() {
     </div>
     <div id="cartEmptyImg">
       <img
-        src="./images/cartBanner.png"
+        src="../images/cartBanner.png"
         alt=""
       />
       <h3>You don't have any items in your cart</h3>

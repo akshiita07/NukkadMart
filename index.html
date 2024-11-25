@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Essentials Made Easy | NukkadMart</title>
   <link rel="stylesheet" href="./styles/login.css">
-  <link rel="icon" type="image/x-icon"
-    href="images/icon.png" />
+  <link rel="icon" type="image/x-icon" href="images/icon.png" />
 </head>
+
 <body>
-    <div class="cont">
+  <div class="cont">
     <h1>WELCOME TO NUKKADMART</h1>
     <div class="container">
-    <h2>Choose Account Type</h2>
-    <div class="account-type">
-      <div class="option selected" id="userOption">
-        <img src="./images/user.png" alt="User Icon">
-        <p>User</p>
+      <h2>Choose Account Type</h2>
+      <div class="account-type">
+        <div class="option selected" id="userOption">
+          <img src="./images/user.png" alt="User Icon">
+          <p>User</p>
+        </div>
+        <div class="option" id="shopkeeperOption">
+          <img src="./images/shop.png" alt="Shopkeeper Icon">
+          <p>Shopkeeper</p>
+        </div>
       </div>
-      <div class="option" id="shopkeeperOption">
-        <img src="./images/shop.png" alt="Shopkeeper Icon">
-        <p>Shopkeeper</p>
+      <p class="welcome" id="welcomeText">Hello User!</p>
+      <p class="instructions">Please fill out the form below to get started</p>
+      <div class="form">
+        <form id="loginForm" onsubmit="return validatePassword()">
+          <label>Phone Number</label>
+          <input type="contact" placeholder="Enter Contact number " pattern="\d{10}" required>
+
+          <label for="password">Password:</label><br>
+          <input id="password" type="password" placeholder="Enter Password" required />
+          <p id="passwordError" style="color: red; display: none;">Incorrect Password. Must be min 7 characters long and
+            include at least one special character.</p>
+
+
+
+          <button type="submit" class="login-btn" id="loginButton">Login</button>
+        </form>
+
+        <p class="signup">No account? <a href="signup.html">Signup</a></p>
       </div>
-    </div>
-    <p class="welcome" id="welcomeText">Hello User!</p>
-    <p class="instructions">Please fill out the form below to get started</p>
-    <div class="form">
-      <form id="loginForm">
-        <label>Phone Number</label>
-        <input type="contact" placeholder="Enter Contact number" required>
-        
-        <label>Password</label>
-        <input type="password" placeholder="Enter Password" required>
-    
-        <button type="submit" class="login-btn" id="loginButton">Login</button>
-    </form>
-    
-      <p class="signup">No account? <a href="signup.html">Signup</a></p>
     </div>
   </div>
-</div>
   <script src="scripts/login.js"></script>
 </body>
+
 </html>

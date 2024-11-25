@@ -29,21 +29,21 @@ function footer(){
           <!-- Branding and Social Media Section -->
           <div class="footer-section branding">
             <div class="logo-and-apps">
-              <img src="images/logo.png" alt="Bigbasket Logo" class="logo">
+              <img src="../images/logo.png" alt="Bigbasket Logo" class="logo">
               <div class="app-links">
-                <a href="#"><img src="images/google_play.webp" alt="Google Play" class="google-play-logo"></a>
-                <a href="#"><img src="images/app_store.png" alt="App Store" class="app-store-logo"></a>
+                <a href="#"><img src="../images/google_play.webp" alt="Google Play" class="google-play-logo"></a>
+                <a href="#"><img src="../images/app_store.png" alt="App Store" class="app-store-logo"></a>
               </div>
             </div>
             <div class="social-icons">
               <a href="https://github.com/akshiita07/NukkadMart" aria-label="Facebook">
-                <img src="images/facebook-logo.webp" alt="Facebook" width="24" height="24">
+                <img src="../images/facebook-logo.webp" alt="Facebook" width="24" height="24">
               </a>
               <a href="https://github.com/akshiita07/NukkadMart" aria-label="Instagram">
-                <img src="images/instagram-logo.webp" alt="Instagram" width="24" height="24">
+                <img src="../images/instagram-logo.webp" alt="Instagram" width="24" height="24">
               </a>
               <a href="https://github.com/akshiita07/NukkadMart" aria-label="Twitter">
-                <img src="images/twitter.webp" alt="Twitter" width="24" height="24">
+                <img src="../images/twitter.webp" alt="Twitter" width="24" height="24">
               </a>
             </div>
           </div>
