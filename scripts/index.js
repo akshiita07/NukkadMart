@@ -1,5 +1,6 @@
 // adding footer
 import footer from "../components/footer.js";
+document.getElementById("NAVBAR").innerHTML = navbar();
 let display = document.querySelector("#footer_display");
 display.innerHTML = footer();
 
