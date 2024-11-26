@@ -25,7 +25,7 @@ function navbar() {
       <a href="category.html">Categories</a>
     </div>
     <div id="cat2">
-    <a href="../index.html">Logout</a>
+    <a href="index.html">Logout</a>
 </div>
 
     <div id="mycart">
